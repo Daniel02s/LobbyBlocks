@@ -1,4 +1,12 @@
 name: LobbyBlocks
-version: '${project.version}'
+version: 1.0
 main: it.lobbyblocks.Main
 authors: [ Axiid, Emaoh ]
+depend:
+  - ProtocolLib
+commands:
+  lobbyblocks:
+    description: Main command
+    aliases:
+      - blocks
+      - lblocks

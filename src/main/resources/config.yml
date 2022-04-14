@@ -1,0 +1,4 @@
+# LobbyBlocks v1.0 - Axiid & Emaoh
+
+blocks: WOOL
+timer: 80 # in tick (1 secondo = 20L)

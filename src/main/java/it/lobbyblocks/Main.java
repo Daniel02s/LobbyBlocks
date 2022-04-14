@@ -1,6 +1,9 @@
 package it.lobbyblocks;
 
+import com.comphenix.protocol.ProtocolManager;
 import it.lobbyblocks.commands.MainCommand;
+import it.lobbyblocks.listeners.PlaceEvent;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -8,6 +11,8 @@ public class Main extends JavaPlugin {
     // Imaginary Green 16x
 
     private static Main instance;
+
+    public static ProtocolManager protocolManager;
 
     public static Main getInstance() {
         return instance;
@@ -20,6 +25,7 @@ public class Main extends JavaPlugin {
         instance = this;
 
         getCommand("lobbyblocks").setExecutor(new MainCommand());
+        Bukkit.getPluginManager().registerEvents(new PlaceEvent(), this);
 
     }
 
