@@ -1,0 +1,4 @@
+name: LobbyBlocks
+version: '${project.version}'
+main: it.lobbyblocks.Main
+authors: [ Axiid, Emaoh ]
