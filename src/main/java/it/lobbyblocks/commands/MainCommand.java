@@ -12,14 +12,12 @@ public class MainCommand implements CommandExecutor {
 
         if(!(sender instanceof Player)) {
             sender.sendMessage("Questo comando è eseguibile solamente da un giocatore.");
+            return false;
         }
 
         Player p = (Player) sender;
-
-        if(args.length == 0) {
-            p.sendMessage("§cThis server running LobbyBlocks by");
-            p.sendMessage("§c@imaxiid and @banevado");
-        }else if(args.length == 1) {
+        
+       if(args.length == 1) {
             if(args[0].equalsIgnoreCase("reload")) {
                 if(p.hasPermission("lobbyblocks.reload")) {
 
