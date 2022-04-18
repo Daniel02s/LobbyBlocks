@@ -1,9 +1,7 @@
 name: LobbyBlocks
 version: 1.0
 main: it.lobbyblocks.Main
-authors: [ Axiid, Emaoh ]
-depend:
-  - ProtocolLib
+authors: []
 commands:
   lobbyblocks:
     description: Main command
